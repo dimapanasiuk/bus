@@ -25,43 +25,67 @@ body {
   color: white;
 }
 
+.my-list a:hover {
+  color: #A593E0;
+}
+
 /*start*/
 
 .star {
   padding: 100px 0 100px 0;
+  background-image: url(../img/background/car.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .star-head {
   padding: 0 0 30px 0; 
+  font-size: 50px;
 }
 
 .star-paragraph {
   max-width: 500px;
   padding: 0 0 30px;
+  font-size: 24px;
 }
 
 .star-button {
-  padding: 15px 55px;
+  padding: 15px 70px;
   color: white;
   border: 3px solid #A593E0;
   border-radius: 100px;
+  font-size: 24px;
   background-color: #A593E0;
+}
+
+.star-button:hover {
+  background-color: #fff;
+  color: #566270;
 }
 
 /*route*/
 
-.route {
+/*.route {
+  background-image: url(../img/background/ellipse1.svg);
+  background-repeat: no-repeat; 
+}*/
+
+.route-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 100px; 
 }
 
 .route-default {
   border-radius: 5px;
   background-color: #566270;
-  padding: 80px;
+  padding: 60px 80px;
   text-align: center;
+}
+
+.route-default  h2 {
+  margin-top: 20px;
 }
 
 
@@ -76,23 +100,44 @@ body {
 
 .price-text_head {
   padding: 0 0 40px 0;
+  font-size: 50px;
 }
 
 .price-text_paragraph {
   max-width: 500px;
+  font-size: 24px; 
 }
 
 .price-card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .card-default {
   text-align: center;
-  width: 20%;
+  width: 30%;
   padding: 40px;
   border-radius: 5px;
   background-color: #80D4F6;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+
+.card-default-pay {
+  background-color: #C4C4C4;
+  color: #000000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  border-radius: 6px;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+
+.card-default-name {
+  margin-top: 20px;
+  color: #000000;
 }
 
 /*time-work*/
@@ -101,13 +146,27 @@ body {
   padding: 0 0 100px 0;
 }
 
-.time-work_head {
+.price-text_head,
+.time-work_head,
+.services-head,
+.contacts-head {
   padding: 0 0 40px 0;
+  font-size: 50px;
 }
 
 .time-work_layout {
   display: flex;
   justify-content: space-between;
+  margin-left: 40px;
+}
+
+.time-work_first-side,
+.time-work_second-side {
+  width: 50%;
+}
+
+.time-work_first-side-head {
+  margin-bottom: 20px;
 }
 
 .time-work_first-side-default-str {
@@ -120,11 +179,18 @@ body {
   background-color: #282C37;
   padding: 10px;
   margin: 0 20px 20px 0;
+  color: white;
+}
+
+.day-off {
+  background-color: #F16B6F;
+  color: #282C37;
 }
 
 .time {
   border-radius: 5px;
   padding: 10px;
+  width: 100%;
   margin: 0 20px 20px 0;
   background-color: #80D4F6;
 }
@@ -140,10 +206,13 @@ body {
 }
 
 .services_default-paragraph {
-  padding: 15px;
+  padding: 20px;
   background-color: #80D4F6;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
 }
 
 .services_main-paragraph {
@@ -151,6 +220,8 @@ body {
   background-color: #282C37;
   color: white;
   border-radius: 5px;
+  font-size: 24px;
+  margin-left: 40px;
 }
 
 .services_main-paragraph-note {
@@ -158,12 +229,18 @@ body {
   background-color: #A593E0;
   color: #282C37;
   border-radius: 5px;
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
 }
 
 /*contacts*/
 
 .contacts {
   padding: 0 0 100px 0; 
+  background-image: url(../img/background/car-footer.jpg);
+  background-repeat: no-repeat;
 }
 
 .contacts-head {
@@ -178,21 +255,80 @@ body {
 .contacts-card-default {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   background-color: #80D4F6;
   border-radius: 5px;
   padding: 40px; 
+  width: 40%;
 }
 
 .contacts-card-default_head {
   width: 50%;
+  font-size: 40px;
+  color: #566270;
+}
+
+.contacts-card-default-around-img{
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50%; 
+  margin-right: 20px;
+}
+
+.contacts-card-default a {
+  font-size: 40px;
+  color: #000;
+  font-weight: 800;
+}
+
+.contacts-card-default a:hover {
+  opacity: 0.5;
 }
 
 
 .my-footer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.my-footer_head {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 38px;
 }
 
 .my-footer_link {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.my-footer_link-viber {
+  background-color: #A593E0;
+  padding: 15px;
+  border-radius: 50%; 
+}
+
+.my-footer_link-whatsap {
+  background-color: #4FD4AD; 
+  padding: 15px;
+  border-radius: 50%;
+  margin: 0 20px; 
+}
+
+.my-footer_link-telegram {
+  background-color: #2CA5E0;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+
+.my-footer_link-telegram:hover,
+.my-footer_link-whatsap:hover,
+.my-footer_link-viber:hover 
+ {
+  opacity: 0.7;
+}
+
