@@ -89,6 +89,29 @@ body {
 }
 
 
+.stopping-main-head {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.stopping-head {
+  display: inline;
+}
+
+.stopping-list {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.stopping-list li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px; 
+  padding: 10px;
+  background-color: #80D4F6;
+}
+
+
 /*price*/
 
 .price {
