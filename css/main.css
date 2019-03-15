@@ -11,7 +11,8 @@ body {
 }
 
 /*header*/
-.my-header {
+.my-header,
+.my-nav  {
   background-color: #08182B;
 }
 
@@ -47,6 +48,7 @@ body {
   max-width: 500px;
   padding: 0 0 30px;
   font-size: 24px;
+  line-height: 35px;
 }
 
 .star-button {
@@ -129,6 +131,7 @@ body {
 .price-text_paragraph {
   max-width: 500px;
   font-size: 24px; 
+  line-height: 35px;
 }
 
 .price-card {
@@ -245,6 +248,7 @@ body {
   border-radius: 5px;
   font-size: 24px;
   margin-left: 40px;
+  line-height: 35px;
 }
 
 .services_main-paragraph-note {
@@ -355,3 +359,240 @@ body {
   opacity: 0.7;
 }
 
+.mob-header {
+  display: none;
+} 
+
+
+
+@media only screen and (max-device-width:1190px){
+  .container  {
+    padding: 0 40px;
+  }
+
+  .star  {
+    margin: 100px 0;
+  }
+    
+.route ,
+.route-container ,
+.price,
+.time-work,
+.services,
+.my-footer_link   {
+    margin-bottom: 100px;
+  }
+  
+  .container-two{
+    padding-left: 40px;
+  } 
+}
+
+
+@media only screen and (max-device-width:768px){
+  .my-header {
+    display: none;
+  }
+
+  .mob-header {
+    display: block;
+    position: absolute;
+    top: 0;
+  } 
+  .my-list{
+    flex-direction: column;
+  }
+
+  .my-list li:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .my-list li {
+    padding: 20px 20px;
+    font-size: 25px;
+  }
+}  
+
+
+@media only screen and (max-device-width: 480px){
+  
+  .my-list li {
+    font-size: 40px;
+    padding: 40px;
+  }
+  
+  .star  {
+    background-image: none;
+    margin-bottom: 200px; 
+  }
+
+  .star-head {
+    margin-bottom: 50px;
+    font-size: 80px; 
+  }
+
+  .star-paragraph {
+    max-width: 100%;
+    font-size: 45px;
+    margin-bottom: 50px;
+    line-height: 60px; 
+  }
+
+  .star-button {
+    font-size: 60px;
+    padding: 30px 100px;
+  }
+
+  .route-container  {
+    flex-direction: column;
+  }
+
+  .route-default {
+    width: 70%;
+  }
+
+  
+  .route-default h2 {
+    font-size: 60px; 
+  }
+
+  .route-default img {
+    width: 100px;
+  }
+
+.rorate-next-icon {
+    width: 70px;
+    padding: 25px 0;
+    transform: rotate(90deg); 
+  }
+
+  .stopping-main-head {
+    font-size: 80px;
+  }
+
+  .stopping-head {
+    font-size: 50px;
+  }
+
+  .stopping-list li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .stopping-list p {
+    font-size: 40px;
+  }
+  
+  .stopping-list {
+    margin-bottom: 60px;
+  }
+
+  .price  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price-text_head {
+    font-size: 80px;
+  }
+
+
+  .price-text_paragraph{
+    font-size: 45px;
+    margin-bottom: 50px;
+    line-height: 60px; 
+    max-width: 100%;
+  }
+
+  .card-default {
+    width: 40%;
+  }
+
+  .price-card {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+.card-default-pay {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+  .card-default-name {
+    font-size: 60px;
+  }
+
+  .time-work_layout {
+    flex-direction: column;
+  }
+
+  .time-work_first-side {
+    margin-bottom: 40px;
+  }
+
+  .time-work_first-side, .time-work_second-side {
+      width: 100%;
+  }
+  
+  .time-work_head {
+    font-size: 80px;
+  }
+
+  .time-work_first-side-head {
+    font-size: 60px;
+  }
+
+  .day, 
+  .time {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  .services  {
+    display: none;
+  }
+
+
+  .contacts-head {
+    font-size: 80px; 
+  }
+
+  .contacts-cards {
+    flex-direction: column;
+  }
+
+  .contacts-card-default {
+    margin-bottom: 40px;
+    width: 90%;
+  }
+
+  .contacts-card-default-around-img {
+    margin-bottom: 40px;
+  }
+
+  .contacts-card-default-around-img img {
+    width: 100px;
+    padding: 40px;
+  }
+
+  .contacts-card-default_head {
+    margin-left: 50px;
+    font-size: 90px;
+  }
+
+  .contacts-card-default a {
+    font-size: 70px;
+  }
+
+  .my-footer_head {
+    font-size: 80px;
+  }
+
+  .my-footer_link img {
+    width: 80px;
+    padding: 20px;
+  }
+}
