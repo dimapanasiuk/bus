@@ -404,6 +404,7 @@ body {
     top: 0;
     background-color: #08182B;
     position: fixed;
+    width: 100%;
   }
 
   .my-list {
